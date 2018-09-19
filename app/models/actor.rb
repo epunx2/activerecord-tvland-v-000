@@ -8,6 +8,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     char = self.characters
+    binding.pry
     if char.length > 1
       binding.pry
       char.each do  |a|
