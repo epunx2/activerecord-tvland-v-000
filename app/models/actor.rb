@@ -8,13 +8,13 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     chars = self.characters
-    if char.length == 1
-      char = char[0]
+    if chars.length == 1
+      char = chars[0]
       name = char.name
       binding.pry
-    elsif char.length > 1
+    elsif chars.length > 1
       binding.pry
-      char.each do  |a|
+      chars.each do  |a|
         "#{a[name]} - "
       end
     end
