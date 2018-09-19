@@ -10,6 +10,7 @@ class Actor < ActiveRecord::Base
     char = self.characters
     if char.length == 1
       name = char[0].name
+      binding.pry
     elsif char.length > 1
       binding.pry
       char.each do  |a|
