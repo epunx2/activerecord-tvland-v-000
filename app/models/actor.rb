@@ -12,7 +12,6 @@ class Actor < ActiveRecord::Base
       char = chars[0]
       "#{char.name} - #{char.show.name}"
     elsif chars.length > 1
-      binding.pry
       chars.each do  |a|
         "#{char.name} - #{char.show.name}"
       end
