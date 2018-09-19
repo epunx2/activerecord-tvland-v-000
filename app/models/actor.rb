@@ -9,7 +9,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     char = self.characters
     if char.length == 1
-      pry
+      binding.pry
       name = char.name
     elsif char.length > 1
       binding.pry
