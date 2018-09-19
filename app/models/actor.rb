@@ -11,6 +11,6 @@ class Actor < ActiveRecord::Base
     # char.each do { |a|
     #   "#{a[name]} - "
     # }
-    char
+    char.length
   end
 end
