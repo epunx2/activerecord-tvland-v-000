@@ -14,6 +14,7 @@ class Actor < ActiveRecord::Base
         binding.pry
       }
     else
+      binding.pry
       name = char.name
     end
   end
