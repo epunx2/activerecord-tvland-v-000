@@ -10,10 +10,10 @@ class Actor < ActiveRecord::Base
     char = self.characters
     if char.length > 1
       binding.pry
-      char.each do { |a|
+      char.each do  |a|
         "#{a[name]} - "
         binding.pry
-      }
+      end
     else
       binding.pry
       name = char.name
